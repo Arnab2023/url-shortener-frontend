@@ -71,40 +71,11 @@
   z-index: 2;
 }
 
-.btn1 .fill-container1 {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  padding-bottom: 100%;
-  transform: translateY(-50%) rotate(180deg);
-}
-
 /* color filling */
-.btn1 .fill-container1::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(71, 71, 191);
-  border-radius: 30%;
-  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* easeOutQuart */
-  transform: translateY(-100%);
-}
 
 .btn1:hover {
-  border-color: blue;
+  background-color: rgb(24, 24, 94);
   transform: translateY(-2px);
-}
-
-.btn1:hover .fill-container1 {
-  transform: translateY(-50%) rotate(0);
-}
-
-.btn1:hover .fill-container1::after {
-  transform: translateY(0);
 }
 
 .copy-text {
@@ -122,8 +93,10 @@
 .short-url input {
   height: 40px;
   width: 500px;
-
+  text-decoration: none;
+  outline: none;
   border-radius: 5px;
+  cursor: default;
 }
 
 .btn2 {
@@ -145,42 +118,8 @@
   z-index: 2;
 }
 
-.btn2 .fill-container2 {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  padding-bottom: 100%;
-  transform: translateY(-50%) rotate(180deg);
-}
-
-/* color filling */
-.btn2 .fill-container2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(68, 178, 13);
-  border-radius: 30%;
-  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* easeOutQuart */
-  transform: translateY(-100%);
-}
-
 .btn2:hover {
-  border-color: green;
+  background-color: green;
   transform: translateY(-2px);
   text-decoration: white;
-}
-
-.btn2:hover .fill-container2 {
-  transform: translateY(-50%) rotate(0);
-}
-
-.btn2:hover .fill-container2::after {
-  transform: translateY(0);
-}
-.short-url:hover input {
-  text-decoration: underline;
 }

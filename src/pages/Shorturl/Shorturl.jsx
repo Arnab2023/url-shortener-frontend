@@ -49,9 +49,9 @@ const Shorturl = () => {
     }
   };
 
-  useEffect(() => {
-    console.log(shortURL);
-  }, [shortURL]);
+  // useEffect(() => {
+  //   console.log(shortURL);
+  // }, [shortURL]);
 
   const copyText = async (e) => {
     e.preventDefault();
@@ -90,7 +90,7 @@ const Shorturl = () => {
           />
           <button className="btn1" onClick={handleSubmit}>
             <span className="button-text1">Submit</span>
-            <div className="fill-container1" />
+            
           </button>
           <Toaster />
         </div>
@@ -109,7 +109,7 @@ const Shorturl = () => {
                 />
                 <button className="btn2" onClick={copyText}>
                   <span className="button-text2">Copy</span>
-                  <div className="fill-container2" />
+                 
                 </button>
               </div>
             </div>
