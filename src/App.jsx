@@ -4,10 +4,10 @@ import "./App.css";
 import Login from "./pages/Login/Login";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Shorturl from "./pages/Shorturl/Shorturl";
-
+import { UserProvider } from "./context/UserContext";
 function App() {
   return (
-    <>
+    <UserProvider>
       <div className="App">
         <Router>
           <Routes>
@@ -18,7 +18,7 @@ function App() {
           </Routes>
         </Router>
       </div>
-    </>
+    </UserProvider>
   );
 }
 
