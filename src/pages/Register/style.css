@@ -1,0 +1,52 @@
+.user-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  margin-top: 40px;
+  width: 800px;
+  height: 800px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 3px 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.userform:hover {
+  border: 2px solid black;
+}
+
+.reginp {
+  width: 225px;
+  border-radius: 6px;
+  padding: 15px;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  box-shadow: 3px 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.regbtn {
+  height: 30px;
+  width: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: "Russo one", sans-serif;
+}
+
+.regbtn:hover {
+  background-color: black;
+  color: white;
+}
