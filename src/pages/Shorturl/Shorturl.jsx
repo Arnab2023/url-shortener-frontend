@@ -15,12 +15,14 @@ const Shorturl = () => {
   const { loggedUser } = useUser();
 
   const toaster = useToaster();
-  const handleCheckUrl = () => {};
 
   const isValidUrl = (originalURL) => {
     try {
-      new URL(originalURL);
-      return true;
+      const url = new URL(originalURL);
+      if (url.protocol === "http:" || url.protocol === "https:") {
+        return true;
+      }
+      return false;
     } catch (error) {
       return false;
     }
