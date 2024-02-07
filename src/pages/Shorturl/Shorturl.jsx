@@ -27,6 +27,7 @@ const Shorturl = () => {
       return false;
     }
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (isValidUrl(originalURL) === false) {

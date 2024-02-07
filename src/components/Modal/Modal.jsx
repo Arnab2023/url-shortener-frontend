@@ -23,11 +23,9 @@ const Modal = ({ shortId, setModalOpen }) => {
 
   const isValidUrl = (originalURL) => {
     try {
-      const url = new URL(originalURL);
-      if (url.protocol === "https" || url.protocol === "http") {
-        return true;
-      }
-      return false;
+      new URL(originalURL);
+
+      return true;
     } catch (error) {
       return false;
     }
