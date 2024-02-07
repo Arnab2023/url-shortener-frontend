@@ -7,10 +7,13 @@ const Modal = ({ shortId, setModalOpen }) => {
   const handleSubmit = async () => {
     event.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:8001/url/edit", {
-        shortId: shortId,
-        newUrl: newURL,
-      });
+      const { data } = await axios.post(
+        "https://url-shortener-backend-zeta.vercel.app/url/edit",
+        {
+          shortId: shortId,
+          newUrl: newURL,
+        }
+      );
       setModalOpen(false);
       console.log(data.message);
     } catch (error) {

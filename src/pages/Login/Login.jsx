@@ -14,10 +14,13 @@ const Login = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:8001/user/login", {
-        email,
-        password,
-      });
+      const { data } = await axios.post(
+        "http://url-shortener-backend-zeta.vercel.app/user/login",
+        {
+          email,
+          password,
+        }
+      );
       if (data.user) {
         setLoggedUser({
           id: data.user._id,

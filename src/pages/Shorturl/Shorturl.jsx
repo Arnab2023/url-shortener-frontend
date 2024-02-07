@@ -10,7 +10,7 @@ const Shorturl = () => {
   const [originalURL, setOriginalURL] = useState("");
   const [shortURL, setShortURL] = useState("");
   const [analytic, setAnalytic] = useState({});
-  const BaseURL = "http://localhost:8001";
+
   const inputRef = useRef(null);
   const { loggedUser } = useUser();
 
@@ -34,12 +34,12 @@ const Shorturl = () => {
     } else {
       try {
         const { data } = await axios.post(
-          `${BaseURL}/url`,
+          "http://url-shortener-backend-zeta.vercel.app/url",
           { url: originalURL, userId: loggedUser ? loggedUser.id : null },
           { timeout: 10000 }
         );
         if (data) {
-          setShortURL(`${BaseURL}/${data.id}`);
+          setShortURL(`https://url-shortener-backend-zeta.vercel.app/${data.id}`);
         }
       } catch (error) {
         console.error(error);

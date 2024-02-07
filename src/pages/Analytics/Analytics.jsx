@@ -23,7 +23,7 @@ function Analytics() {
     const getData = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:8001/url/analytics/${id}`
+          `https://url-shortener-backend-zeta.vercel.app/url/analytics/${id}`
         );
         setAData(data.data);
       } catch (error) {
@@ -45,6 +45,7 @@ function Analytics() {
   return (
     <div className="outer">
       <Navbar showText={"dashboard"} />
+
       <div className="inner">
         <div className="data-container">
           <span>
@@ -55,8 +56,11 @@ function Analytics() {
           </span>
           <span>
             Shortened URL:
-            <a href={`http://localhost:8001/${aData?.shortId}`} target="_blank">
-              <div className="inp2">{`http://localhost:8001/${aData?.shortId}`}</div>
+            <a
+              href={`http://url-shortener-backend-zeta.vercel.app/${aData?.shortId}`}
+              target="_blank"
+            >
+              <div className="inp2">{`http://url-shortener-backend-zeta.vercel.app/${aData?.shortId}`}</div>
             </a>
           </span>
           <span>
@@ -67,7 +71,7 @@ function Analytics() {
         <table>
           <thead>
             <tr>
-              <th className="center1">S No. </th>
+              <th className="center3">S No. </th>
               <th>Date</th>
               <th>Time</th>
             </tr>
