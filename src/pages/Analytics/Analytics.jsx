@@ -17,7 +17,7 @@ function Analytics() {
     if (!loggedUser) {
       navigate("/login");
     }
-  }, []);
+  }, [loggedUser]);
 
   useEffect(() => {
     const getData = async () => {

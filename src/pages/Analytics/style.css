@@ -1,13 +1,16 @@
 .data-container {
+  display: flex;
+  flex-direction: column;
   font-family: "Poppins", sans-serif;
-
+  display: flex;
   border: 2px solid black;
   display: flex;
   flex-direction: column;
   margin: auto;
   margin-top: 40px;
-  width: 1000px;
-  height: 220px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 20px;
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -43,7 +46,7 @@
 
 .inp3 {
   border: 2px #cccccc solid;
-  margin-left: 65px;
+  margin-left: 63px;
   border-radius: 5px;
   background-color: #ffffff;
   padding: 0px 10px 0px 10px;

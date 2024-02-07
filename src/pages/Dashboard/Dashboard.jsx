@@ -27,7 +27,7 @@ function Dashboard() {
     if (!loggedUser) {
       navigate("/login");
     }
-  }, []);
+  }, [loggedUser]);
 
   useEffect(() => {
     console.log(loggedUser.id);
@@ -53,11 +53,10 @@ function Dashboard() {
           <table>
             <thead>
               <tr className="th-list">
-                <th>Serial No.</th>
+                <th >Serial No.</th>
                 <th>Original URL</th>
                 <th>Shortened URL</th>
 
-                <th className="center">Clicks</th>
                 <th className="act">Actions</th>
               </tr>
             </thead>
@@ -79,7 +78,6 @@ function Dashboard() {
                       {`https://url-shortener-backend-zeta.vercel.app/${item.shortId}`}
                     </a>
                   </td>
-                  <td className="center4">{item.visitHistory.length}</td>
                   <td>
                     <div className="actions">
                       <div

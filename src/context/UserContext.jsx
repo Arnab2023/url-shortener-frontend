@@ -8,12 +8,7 @@ export const useUser = () => {
 };
 
 export const UserProvider = ({ children }) => {
-  const storedUser = JSON.parse(localStorage.getItem("loggedUser")) || {
-    id: "",
-    name: "",
-    email: "",
-    token: "",
-  };
+  const storedUser = JSON.parse(localStorage.getItem("loggedUser")) || null;
 
   const [loggedUser, setLoggedUser] = useState(storedUser);
 

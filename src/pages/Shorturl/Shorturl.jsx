@@ -44,6 +44,10 @@ const Shorturl = () => {
           );
         }
       } catch (error) {
+        toast.error("Something went Wrong", {
+          style: { fontFamily: "Poppins" },
+        });
+
         console.error(error);
       }
     }
@@ -55,6 +59,9 @@ const Shorturl = () => {
 
   const copyText = async (e) => {
     e.preventDefault();
+    toast.success("Copied", {
+      style: { fontFamily: "Poppins" },
+    });
     if (inputRef.current) {
       inputRef.current.select();
       navigator.clipboard
@@ -90,7 +97,6 @@ const Shorturl = () => {
           />
           <button className="btn1" onClick={handleSubmit}>
             <span className="button-text1">Submit</span>
-            
           </button>
           <Toaster />
         </div>
@@ -109,7 +115,6 @@ const Shorturl = () => {
                 />
                 <button className="btn2" onClick={copyText}>
                   <span className="button-text2">Copy</span>
-                 
                 </button>
               </div>
             </div>
