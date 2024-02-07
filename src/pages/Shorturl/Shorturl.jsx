@@ -34,12 +34,14 @@ const Shorturl = () => {
     } else {
       try {
         const { data } = await axios.post(
-          "http://url-shortener-backend-zeta.vercel.app/url",
+          "https://url-shortener-backend-zeta.vercel.app/url",
           { url: originalURL, userId: loggedUser ? loggedUser.id : null },
           { timeout: 10000 }
         );
         if (data) {
-          setShortURL(`https://url-shortener-backend-zeta.vercel.app/${data.id}`);
+          setShortURL(
+            `https://url-shortener-backend-zeta.vercel.app/${data.id}`
+          );
         }
       } catch (error) {
         console.error(error);

@@ -57,10 +57,10 @@ function Analytics() {
           <span>
             Shortened URL:
             <a
-              href={`http://url-shortener-backend-zeta.vercel.app/${aData?.shortId}`}
+              href={`https://url-shortener-backend-zeta.vercel.app/${aData?.shortId}`}
               target="_blank"
             >
-              <div className="inp2">{`http://url-shortener-backend-zeta.vercel.app/${aData?.shortId}`}</div>
+              <div className="inp2">{`https://url-shortener-backend-zeta.vercel.app/${aData?.shortId}`}</div>
             </a>
           </span>
           <span>

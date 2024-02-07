@@ -15,7 +15,7 @@ const Login = () => {
     event.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://url-shortener-backend-zeta.vercel.app/user/login",
+        "https://url-shortener-backend-zeta.vercel.app/user/login",
         {
           email,
           password,

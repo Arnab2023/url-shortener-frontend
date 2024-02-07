@@ -17,7 +17,7 @@ const Register = () => {
     if (confirm === password) {
       try {
         const response = await axios.post(
-          "http://url-shortener-backend-zeta.vercel.app/user/register",
+          "https://url-shortener-backend-zeta.vercel.app/user/register",
           {
             name,
             email,
