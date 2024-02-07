@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.table-wrapper {
+  padding-top: 100px;
+}
+
+table {
+  font-family: "Poppins", sans-serif;
+  padding-top: 100px;
+  overflow: hidden;
+  table-layout: fixed;
+  border-collapse: collapse;
+  box-shadow: 0px 10px 10px #ccc;
+  border-radius: 10px;
+  white-space: nowrap;
+  width: 100em;
+  max-width: 80%;
+  margin: auto;
+  table-layout: auto;
+  overflow-x: auto;
+}
+
+.table th,
+.table td {
+  padding: 0.8rem;
+}
+
+.table td {
+  border-top: 0.5px solid #ddd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+th {
+  background-color: #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  padding-bottom: 8px;
+  text-align: left;
+
+  padding-left: 10px;
+}
+
+td {
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.center1 {
+  padding-left: 35px;
+}
+
+.center2 {
+  padding-left: 30px;
+}
+
+.delete:hover {
+  color: #ef4444;
+}
+
+.edit:hover {
+  color: #5491e0;
+}
+.analytics:hover {
+  color: green;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+th.act {
+  margin: auto;
+  margin-left: 10px;
+  padding-left: 20px;
+}
