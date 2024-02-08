@@ -33,6 +33,7 @@ function Navbar({ showText }) {
               className="bton"
               onClick={() => {
                 setLoggedUser(null);
+                navigate("/);
               }}
             >
               Logout
