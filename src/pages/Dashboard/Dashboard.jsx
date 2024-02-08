@@ -29,6 +29,20 @@ function Dashboard() {
     }
   }, [loggedUser]);
 
+  // useEffect(() => {
+  //   console.log(loggedUser.id);
+  //   const datauser = async () => {
+  //     try {
+  //       const { data } = await axios.get(
+  //         `https://url-shortener-backend-zeta.vercel.app/url/analytics/user/${loggedUser.id}`
+  //       );
+  //       setUserData(data?.result);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   };
+  //   datauser();
+  // }, [loggedUser.id]);
   useEffect(() => {
     console.log(loggedUser.id);
     const datauser = async () => {
@@ -42,7 +56,7 @@ function Dashboard() {
       }
     };
     datauser();
-  }, []);
+  }, [loggedUser, modalOpen, deleteNO]);
 
   useEffect(() => {}, [modalOpen, deleteNO]);
 
