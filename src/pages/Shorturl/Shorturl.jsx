@@ -38,8 +38,8 @@ const Shorturl = () => {
       try {
         const { data } = await axios.post(
           "https://url-shortener-backend-zeta.vercel.app/url",
-          { url: originalURL, userId: loggedUser ? loggedUser.id : null },
-          { timeout: 10000 }
+          { url: originalURL, userId: loggedUser ? loggedUser.id : null }
+          // { timeout: 10000 }
         );
         if (data) {
           setShortURL(

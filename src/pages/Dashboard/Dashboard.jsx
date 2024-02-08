@@ -25,7 +25,7 @@ function Dashboard() {
   };
   useEffect(() => {
     if (!loggedUser) {
-      navigate("/login");
+      navigate("/");
     }
   }, [loggedUser]);
 
@@ -34,8 +34,7 @@ function Dashboard() {
     const datauser = async () => {
       try {
         const { data } = await axios.get(
-          `https://url-shortener-backend-zeta.vercel.app/url/analytics/user/${loggedUser.id}`,
-          { timeout: 10000 }
+          `https://url-shortener-backend-zeta.vercel.app/url/analytics/user/${loggedUser.id}`
         );
         setUserData(data?.result);
       } catch (error) {
@@ -53,7 +52,7 @@ function Dashboard() {
           <table>
             <thead>
               <tr className="th-list">
-                <th >Serial No.</th>
+                <th>Serial No.</th>
                 <th>Original URL</th>
                 <th>Shortened URL</th>
 

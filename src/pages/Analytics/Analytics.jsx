@@ -15,9 +15,9 @@ function Analytics() {
   const navigate = useNavigate();
   useEffect(() => {
     if (!loggedUser) {
-      navigate("/login");
+      navigate("/");
     }
-  }, [loggedUser]);
+  }, []);
 
   useEffect(() => {
     const getData = async () => {
