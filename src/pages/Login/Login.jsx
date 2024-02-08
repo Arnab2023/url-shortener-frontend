@@ -4,13 +4,14 @@ import { useState } from "react";
 import { useUser } from "../../context/UserContext";
 import axios from "axios";
 import "./style.css";
+import { useToaster } from "react-hot-toast";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const { setLoggedUser } = useUser();
-
+  const toaster = useToaster();
   const onSubmit = async (event) => {
     event.preventDefault();
     try {
