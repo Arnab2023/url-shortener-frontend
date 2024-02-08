@@ -9,17 +9,15 @@ import Analytics from "./pages/Analytics/Analytics";
 function App() {
   return (
     <UserProvider>
-      <div className="App">
-        <Router>
-          <Routes>
-            <Route path="/register" element={<Register />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/" element={<Shorturl />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/analytics/:id" element={<Analytics />} />
-          </Routes>
-        </Router>
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Shorturl />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/analytics/:id" element={<Analytics />} />
+        </Routes>
+      </Router>
     </UserProvider>
   );
 }

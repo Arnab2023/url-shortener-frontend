@@ -9,10 +9,12 @@ function Navbar({ showText }) {
   return (
     <div className="navbar">
       <div className="img">
-        <img
-          src="https://cdn0.iconfinder.com/data/icons/very-basic-android-l-lollipop-icon-pack/24/globe-512.png"
-          alt=""
-        />
+        <a href="/">
+          <img
+            src="https://cdn0.iconfinder.com/data/icons/very-basic-android-l-lollipop-icon-pack/24/globe-512.png"
+            alt=""
+          />
+        </a>
         <p>URL Shortener</p>
       </div>
       <div className="nav">

@@ -45,7 +45,10 @@ function Analytics() {
   return (
     <div className="outer">
       <Navbar showText={"dashboard"} />
-
+      <h1 className="headline">
+        {" "}
+        Analytics for URL ID: <div className="inp2">{id}</div>
+      </h1>
       <div className="inner">
         <div className="data-container">
           <span>

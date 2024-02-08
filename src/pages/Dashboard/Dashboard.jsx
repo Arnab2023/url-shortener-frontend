@@ -42,13 +42,16 @@ function Dashboard() {
       }
     };
     datauser();
-  }, [modalOpen, deleteNO]);
+  }, []);
+
+  useEffect(() => {}, [modalOpen, deleteNO]);
 
   return (
     <div>
       <Navbar showText={"shortURL"} />
       {loggedUser ? (
         <div className="table-wrapper">
+          <h1 className="headline">Dashboard</h1>
           <table>
             <thead>
               <tr className="th-list">
